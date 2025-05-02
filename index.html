@@ -19,26 +19,26 @@
     <h2>Gallery</h2>
     <div class="row">
       <div class="column">
-<a href="image1.html" onclick="openModal('modal1')">
+<a href="image1.html" >
 <img src="20240203_175537.jpg" alt="Photo 1", width="650" height="450">
 </a>
-<a href="image2.html" onclick="openModal('modal2')">
+<a href="image2.html" >
 <img src="20240622_162402.jpg" alt="Photo 2", width="550" height="450"> 
 </a>     
 </div>
 <div class="column">
-<a href="image3.html" onclick="openModal('modal3')">
+<a href="image3.html">
 <img src="20230312_110044 (1).jpg" alt="Photo 4", width="600" height="1080"> 
 </a>
-<a href="image4.html" onclick="openModal('modal4')">
+<a href="image4.html">
 <img src="20241116_231739.jpg" alt="Photo 6", width="600" height="700">
 </a>
 </div>
 <div class="column">
-<a href="image5.html" onclick="openModal('modal5')">
+<a href="image5.html" >
 <img src="20230813_150308 (1).jpg" alt="Photo 5", width="700" height="450"> 
 </a>
-<a href="image6.html" onclick="openModal('modal6')"> 
+<a href="image6.html" > 
 <img src="20220715_192731 (1).jpg" alt="Photo 3", width="650" height="450">    
 </a>
     </div>
@@ -67,20 +67,5 @@
     <p>&copy; 2025 Your Name. All rights reserved.</p>
   </footer>
 
-	<script>
-  function openModal(id) {
-    document.getElementById(id).style.display = 'block';
-  }
-
-  function closeModal(id) {
-    document.getElementById(id).style.display = 'none';
-  }
-
-  window.onclick = function(event) {
-    document.querySelectorAll('.modal').forEach(modal => {
-      if (event.target === modal) modal.style.display = "none";
-    });
-  }
-</script>
 </body>
 </html>

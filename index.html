@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>My Photography Portfolio</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body background = "aura-color-l5dhylz9f95xrj7g.jpg">
+
+  <!-- Hero Section -->
+  <header class="hero">
+    <h1>My Photography Portfolio</h1>
+    <p>Capturing moments one click at a time</p>
+  </header>
+
+  <!-- Gallery Section -->
+  <section class="gallery">
+    <h2>Gallery</h2>
+    <div class="row">
+      <div class="column">
+<a href="image1.html" onclick="openModal('modal1')">
+<img src="20240203_175537.jpg" alt="Photo 1", width="650" height="450">
+</a>
+<a href="image2.html" onclick="openModal('modal2')">
+<img src="20240622_162402.jpg" alt="Photo 2", width="550" height="450"> 
+</a>     
+</div>
+<div class="column">
+<a href="image3.html" onclick="openModal('modal3')">
+<img src="20230312_110044 (1).jpg" alt="Photo 4", width="600" height="1080"> 
+</a>
+<a href="image4.html" onclick="openModal('modal4')">
+<img src="20241116_231739.jpg" alt="Photo 6", width="600" height="700">
+</a>
+</div>
+<div class="column">
+<a href="image5.html" onclick="openModal('modal5')">
+<img src="20230813_150308 (1).jpg" alt="Photo 5", width="700" height="450"> 
+</a>
+<a href="image6.html" onclick="openModal('modal6')"> 
+<img src="20220715_192731 (1).jpg" alt="Photo 3", width="650" height="450">    
+</a>
+    </div>
+</div>
+
+  </section>
+
+  <!-- About Section -->
+  <section class="about">
+    <h2>About Me</h2>
+    <p>Hi, I'm an amateur photographer who loves to tell stories through the lens. From landscapes to portraits, I enjoy exploring the world and capturing its beauty.</p>
+  </section>
+
+  <!-- Contact Section -->
+  <section class="contact">
+    <h2>Contact</h2>
+    <form>
+      <input type="text" placeholder="Your Name" required>
+      <input type="email" placeholder="Your Email" required>
+      <textarea placeholder="Your Message" required></textarea>
+      <button type="submit">Send</button>
+    </form>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Your Name. All rights reserved.</p>
+  </footer>
+
+	<script>
+  function openModal(id) {
+    document.getElementById(id).style.display = 'block';
+  }
+
+  function closeModal(id) {
+    document.getElementById(id).style.display = 'none';
+  }
+
+  window.onclick = function(event) {
+    document.querySelectorAll('.modal').forEach(modal => {
+      if (event.target === modal) modal.style.display = "none";
+    });
+  }
+</script>
+</body>
+</html>
